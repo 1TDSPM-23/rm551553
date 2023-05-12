@@ -1,92 +1,94 @@
-console.log("Olá Mundo!");
- //declarar uma variável
- ///    var nr1 = "10";
- ///    var nr2 = "5";
+//    //Declarar uma variável com a palavra reservada var.
+//    var nr1 = "10";
+//    var nr2 = "5";
 
- //imprimir as variáveis com o objeo console
- ///    console.log(nr1);
- ///    console.log(nr2);
+//    //Vamos imprimir as variáveis com o objeto console.
+//    console.log(nr1);
+//    console.log(nr2);
 
- //Realizando as operações básicas com esses valores:
- //+ _ - _ * _ e /
+//    //Realizando as operações básicas com estes valores:
+//    // + / - / * e /
 
- //adição
- //realize a concatenação com o texto resultado:
- //Ex: console.log(Resultado nr1 + nr2);
- ///    console.log(nr1 + nr2);
- ///    console.log("Resultado: " + (parseInt (nr1) + parseInt(nr2)));
- ///    console.log(`RESULTADO ADIÇÃO : (${parseInt (nr1) + parseInt (nr2)})`);
+   
+//    //REALIZE A CONCATENAÇÃO COM O TEXTO RESULTADO:
+//    //EX: console.log(RESULTADO nr1 + nr2);
+   
+//    //ADIÇÃO
+//    console.log("RESULTADO " + (nr1 + nr2));
+//    console.log("RESULTADO : " + (parseInt(nr1) + parseInt(nr2)));
+//    console.log(`RESULTADO ADIÇÃO: ${parseInt(nr1) + parseInt(nr2)}`);
+
+//    //SUBTRAÇÃO
+//    console.log(`RESULTADO SUBTRAÇÃO: ${parseInt(nr1) - parseInt(nr2)}`);
+
+//    //MULTIPLICAÇÃO
+//    console.log(`RESULTADO MULTIPLICAÇÃO: ${parseInt(nr1) * parseInt(nr2)}`);
+
+//    //DIVISÃO
+//    console.log(`RESULTADO SUBTRAÇÃO: ${parseInt(nr1) / parseInt(nr2)}`);
+
+//    //OBTENHA O RESTO DA DIVISÃO
+//    console.log(`OBTENDO O RESTO DA DIVISÃO: ${parseInt(nr1) % parseInt(nr2)}`);
+
+   //DESCOBRINDO SE UM NÚMERO É PAR OU IMPAR
+   //UTILIZANDO OPERADOR TERNÁRIO ( ? ).
+//Declarar uma variável com a palavra reservada var.
+// var nr1 = "10";
+// var nr2 = "5";
+// var resultado;
+
+// resultado = !(parseInt(nr1)%parseInt(nr2)) ? "PAR" : "IMPAR";
+// console.log(`O NÚMERO É : ${resultado}`);
 
 
- //Subtração
- ///    console.log(`RESULTADO SUBTRAÇÃO : (${parseInt (nr1) - parseInt (nr2)})`);
+//REGRAS DO CONST
+//1ª Regra = Inicializar na declaração
+// const nome3 = "Violante";
+//2ª Regra = Não pode ser alterado durante o fluxo do programa.
+// nome3 = "Jonathan";
+//DIFERENÇA ENTRE VAR/LET/CONST
+// var nome1 = "Beatriz";
+// let nome2 = "Matheus";
 
+// let nome = "Beatriz";
 
- //Multiplicação
- ///    console.log(`RESULTADO MULTIPLICAÇÃO : (${parseInt (nr1) * parseInt (nr2)})`);
+// if(nome != ""){
+//     let nome = "Robson";
+// }
+// //Qual é o nome que será impresso no log?
+// console.log(nome);
 
+//ARRAY e seu métodos
+// let frutas = ["banana","maçã","morango","carambola","acerola","laranja"];
+//Imprimindo um array
+// console.log(frutas);
+// console.table(frutas);
+// console.log(frutas[4]);
 
- //Divisão
- ///    console.log(`RESULTADO DIVISÃO : (${parseInt (nr1) / parseInt (nr2)})`);
+//Adicionar um iten ao final do array com o método push(iten);
+// frutas.push("melão");
+// console.log(frutas);
+//Adicionar um iten no início do array com o método unshift(iten);
+// frutas.unshift("cajú");
+// console.log(frutas);
+//Remover um iten do final do array com o método pop();
+// frutas.pop();
+// console.log(frutas);
+//Remover um iten do início do array com o método shift();
+// frutas.shift();
+// console.log(frutas);
 
+//Para localizar um itém dentro do array, utilizamos o método indexOf(itenNome);
+// let indice = frutas.indexOf("morango");
+// console.log(frutas[indice]);
 
- //Resto da ivisão
- ///    console.log(`RESTO DA DIVISÃO : (${parseInt (nr1) % parseInt (nr2)})`);
+//Para localizar um itém dentro do array, e apagar ele apagar ele utilizamos o método splice(indice do item, quantidade de vezes que o indice será removido).
+//Obs: utilize o método indexOf(itenNome) para obter o indice do iten;
+// let indice = frutas.indexOf("carambola");
+// console.log("FRUTA Q ESTAVA NO INDICE ANTES DA REMOÇÃO : " + frutas[indice]);
+// frutas.splice(indice,1);
+// console.log("FRUTA Q FICOU NO INDICE PÓS REMOÇÃO : " + frutas[indice]);
 
- //Descobrindo se um número é par ou impar
- //Utilizando operador ternário ( ? ).
- ///    var nr1 = "10";
- ///    var nr2 = "5";
- ///    var resultado;
-
- ///    resultado = !(parseInt(nr1)%parseInt(nr2)) ? "PAR" : "IMPAR";
- ///    console.log(`O Número é : ${resultado}`);
-
-    //DIFERENÇA ENTRE VAR/LET/CONST
-  ///      let nome1 = "Beatriz";
-
-   ///    if(nome != ""){
-      ///     let nome = "Robson";
-   ///   }
-    //Qual o nome será impresso
-    ///  console.log(nome);
-
-    ///  let nom2 = "Matheus";
-
-    //REGRAS DO CONST
-    //1ª Regra = Incializar na declaração
-    ///    const nome3 = "Violante";
-    //2ª Regra = Não pode ser alterado durante o fluxo do programa.
-    ///     const nome4 = "Joathan";
-
-    let frutas = ["banana", "maça", "morano", "carambola", "acerola", "laranja"];
-
-    console.log(frutas);
-    console.table(frutas);
-    console.log(frutas[4]);
-
-    //Adicionar um item ao final do array com o método push(iten)
-    frutas.push("melão");
-    console.log(frutas);
-    //Adicionar um item no inicio do array com o método push(iten)
-    frutas.unshft("cajú");
-    console.log(frutas);
-    //Remover um item no inicio do array com o método pop()
-    frutas.pop();
-    console.log(frutas);
-    //Remover um item no inicio do array com o método shift()
-    frutas.shift();
-    console.log(frutas);
-
-    //Para localizar um item dentro do array, utilizando o método indexOf(itenNome)
-    let indice = frutas.indexOf("morango");
-    console.log(frutas[indice]);
-
-    //Para localizar um item dentro do array, e apagar ele utilizamos o método splice(indice do item, quatiade de vezes que o indice será removido)
-    //OBS: utilize o método indexOf(itenNOme) para obter o indice do item
-    let indice = frutas.indexOf("carambola");
-    console.log("Fruta Q estava no indice anes da remoção : " + frutas[indice]);
-    frutas.splice(indice,1);
-    console.log("Frutas q ficou no indice após remoção : " + frutas[indice]);
-
-    frutas.forEach( (frutas)=>{console.log("oha ele : " + frutas);} );
+// frutas.forEach( (fruta)=>{
+    // console.log("olha ele : " + fruta);
+// } );
