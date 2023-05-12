@@ -31,3 +31,15 @@
     flex-grow: 1;
     margin: 2% 0;
 }
+.limpar-calc{
+    display: flex;
+    flex-wrap: wrap;
+}
+.limpar-calc button{
+    flex-grow: 1;
+    margin: 2% 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(0, 153, 255) 0%, rgb(246, 47, 253) 25%);
+}
